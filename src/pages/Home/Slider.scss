@@ -1,0 +1,21 @@
+.Slides{
+  padding: 57px 0;
+  position: relative;
+  .bgImg{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../../assets/bg1.webp) no-repeat center/contain;
+    width: 80%;
+    height: 100%;
+
+  }
+  h2{
+    font-size: 5rem;
+    font-family: var(--jomoihari-font);
+    color:var(--main-color);
+    margin-bottom: 70px;
+  }
+
+}

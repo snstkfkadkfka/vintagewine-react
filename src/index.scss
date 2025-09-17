@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&family=Noto+Sans+KR:wght@100..900&display=swap');
+/* 변수 style */
+:root{
+  --black-color:28, 10, 10;
+  // color: #1c0a0a;
+  --white-color:#fdfdfd;
+  --main-color-rgb:90, 14, 14;
+  --main-color:#5A0E0E;
+  --sub-color-rgb:122, 8, 8;
+  --sub-color:#7A0808;
+  --font-color-rgb:220, 33, 55; 
+  --font-color:#DC2137; 
+  --jomoihari-font:"Jomolhari", serif;
+  --NotoSansKR-font:"Noto Sans KR", sans-serif;
+}
+
+/* reset */
+html, body{
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(var(--black-color));
+}
+a{color: inherit; text-decoration: none;}
+li{ list-style: none;}
+

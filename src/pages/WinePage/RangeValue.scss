@@ -1,0 +1,60 @@
+.RangeValue{
+  max-width: 338px;
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+  top: 19px;
+  .rangeBar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 11px;
+    column-gap: 8px ;
+    h3{
+      font-size: 1.4rem;
+      font-weight: 700;
+      min-width: 40px;
+    }
+    input{
+      margin-top: 7px;
+      -webkit-appearance: none;
+      border-radius:5px;
+      width: 290px; height: 10px;
+      box-sizing: border-box;
+      border: 1px solid rgba(var(--black-color),0.3);
+      &[type='range']::-moz-range-thumb {
+          -webkit-appearance: none;
+        width: 18px;height:18px;
+        background-color: rgb(var(--sub-color-rgb)); 
+        border-radius: 9px;
+      }
+      &[type='range']::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        width: 18px;height:18px;
+        background-color: rgb(var(--sub-color-rgb)); 
+        border-radius: 9px;
+      }
+    }
+  }
+  .priceBar{
+    font-family: var(--jomoihari-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .RangeValue{
+    float: right;//
+    margin: 0;//
+    max-width: 338px;
+    height: 30px;
+    position: relative;
+    top: 16px;
+  }
+}

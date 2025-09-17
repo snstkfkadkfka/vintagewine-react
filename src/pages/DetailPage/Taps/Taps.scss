@@ -1,0 +1,67 @@
+.Taps{
+  width: 100%;
+  margin-bottom: 50px;
+  .tap-btn{
+    display: flex;
+    column-gap: 1px;
+    max-width: 970px;
+    button{
+      flex: 1;
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 10px 0;
+      letter-spacing: -0.5px;
+      font-family: var(--NotoSansKR-font);
+      background-color: rgb(var(--black-color));
+      color: var(--white-color);
+      border-radius: 3px 3px 0 0;
+      &.active{
+        background-color: transparent;
+        color:rgb(var( --white-color));
+        border: 1px solid rgb(var(--black-color));
+        border-bottom: transparent;
+      }
+    }
+  }
+  .content{
+    position: relative;
+    padding: 26px 24px;
+  }
+}
+@media (min-width:768px ) and (max-width: 1199px) {
+  .Taps{
+    .content{
+      padding: 35px 60px;
+      &::after{
+        content: "";
+        width: calc(100% - 970px);
+        display: block;
+        height: 1px;
+        position: absolute;
+        left: 970px;
+        top: -1px;
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
+@media (min-width:1200px ) {
+  .Taps{
+    .content{
+      padding: 35px 40px;
+      
+      &::after{
+        content: "";
+        width: calc(100% - 970px);
+        display: block;
+        height: 1px;
+        position: absolute;
+        left: 970px;
+        top: -1px;
+        background-color: var(--main-color);
+      }
+    }
+}
+}

@@ -1,0 +1,15 @@
+.NoPage{
+  height: 100vh;
+  grid-column: 1 / -1;
+  display: block;
+  h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    opacity: 0.8;
+    border-top: 3px solid rgb(var(--black-color));
+    border-bottom: 1px solid rgb(var(--black-color));
+    margin-top: 70px;
+    text-align: center;
+    padding: 50px 0 ;
+  }
+}

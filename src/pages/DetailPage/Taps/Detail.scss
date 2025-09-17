@@ -1,0 +1,38 @@
+.Detail{
+  article{
+    font-size: 1.7rem;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    p{
+      color: var(--main-color);
+      position: relative;
+      min-width: 120px;
+      padding-left: 15px;
+      padding-bottom: 6px;
+      font-weight: 500;
+      &::after{
+        content: "";
+        display: block;
+        width: 6px;height: 6px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 6px;
+      }
+    }
+    span{
+      opacity: 0.7;
+      font-size: 1.4rem;
+      line-height: 18px;
+    }
+  }
+}
+@media (min-width:768px) and (max-width: 1199px) {
+  .Detail{
+    article{
+      display: flex;
+    }
+  }
+}

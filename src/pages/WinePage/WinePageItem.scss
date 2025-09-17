@@ -1,0 +1,66 @@
+.WinePageItem{
+  padding: 0 20px;
+  .wineImg{
+    border: 1px solid rgba(var(--main-color-rgb),.4);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 305px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover img{
+      transform: scale(0.95);
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(0.9);
+      transition: transform 0.3s;
+    }
+  }
+  .text{
+    padding: 6px 10px 0;
+    &>span{
+      font-size: 1.3rem;
+      font-family: var(--jomoihari-font);
+      opacity: 0.4;
+    }
+    h4{
+      font-size: 1.9rem;
+      margin-top: 10px;
+      line-height: 1.2;
+    }
+    .price{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 2rem;
+      margin-top: 12px;
+      p{
+        font-family: var(--jomoihari-font);
+        span{
+          font-family: var( --NotoSansKR-font);
+          padding-left: 2px;
+        }
+      }
+      .shopIcon{
+        opacity: 0.5;
+        transition: 0.2s;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+          color: var(  --sub-color);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (min-width:768px) {
+  .WinePageItem{
+    margin: none;
+    padding: 0 0px;
+  }  
+}
+

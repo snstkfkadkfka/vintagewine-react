@@ -1,0 +1,54 @@
+.Title{
+  height: 170px;
+  width: 100%;
+  background-image:linear-gradient(rgba(255,255,255,0.89),rgba(255,255,255,0.89)), url(../../assets/wineBG.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .title-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 115px;
+    color: var(--main-color);
+    .star{
+      font-size: 2.4rem;
+    }
+    p{
+      margin: 0 10px;
+      font-size: 2.4rem;
+      border-bottom:2px solid var(--main-color) ;
+      text-transform: uppercase;
+      font-family: var(--jomoihari-font);
+    }
+  }
+}
+@media ( min-width:768px ) and (max-width: 1199px) {
+  .Title{
+    height: 268px;
+    .title-text{
+      top: 150px;
+      .star{
+        font-size: 4.8rem;
+      }
+      p{
+        font-size: 4.8rem;
+      }
+    }
+  }
+}
+@media (min-width: 1200px ) {
+  .Title{
+    height: 347px;
+    .title-text{
+      top: 220px;
+      .star{
+        font-size: 4.8rem;
+      }
+      p{
+        font-size: 4.8rem;
+      }
+    }
+  }
+}

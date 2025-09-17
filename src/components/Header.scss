@@ -1,0 +1,51 @@
+#Header{
+  top: 0;left: 0;
+  position: absolute;
+  width: 100%;
+  color:var(--white-color);
+  height: 84px;
+  &.wine-style{
+    background-color:rgb(var(--black-color)) ;
+    z-index: 999;
+  }
+  &.desktop{
+    background-image: linear-gradient(rgba(var(--black-color),1),rgba(var(--black-color),0));
+  }
+  &.mobile{
+    background-color: rgb(var(--black-color));
+    position: fixed;
+    z-index: 99;
+  }
+  .top-bar{
+    position: absolute;
+    top: 38px;
+    right: 18px;
+    ul{
+      display: flex;
+      gap: 28px;
+      li{
+
+        cursor: pointer;
+        font-size: 2rem;
+        opacity: 0.8;
+        transition: transform 0.3s;
+        &:hover{
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+@media (min-width:1200px){
+  #Header{
+    background-image: linear-gradient(rgba(var(--black-color),1),rgba(var(--black-color),0));
+    height: 163px;
+    .top-bar{
+      top: 26px;
+      right: 34px;
+    }
+  }
+  
+  
+}

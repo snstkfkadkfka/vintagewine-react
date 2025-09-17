@@ -1,0 +1,99 @@
+.Search{
+  position: fixed;
+  top: 0;bottom: 0;right: 0;left: 0;
+  z-index: 9999;
+  .popup{
+    box-sizing: border-box;
+    padding: 24px 16px;
+    background-color: var( --white-color);
+    width: 100%;height: 100%;
+    .close{
+      position: absolute;right: 16px;
+      font-size: 3rem;
+      display: flex;
+      justify-content: end;
+    }
+    h2{
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-top: 32px;
+    }
+    .search-container{
+      margin-top: 8px;
+      h3{
+        font-size: 1.5rem;
+        padding: 2px 22px;
+        background-color: var(--main-color);
+        display: inline-block;
+        color: var(--white-color);
+      }
+      .container{
+        overflow-y: scroll;
+        height: 100vh;
+        .content{}
+      }
+    }
+  }
+}
+@media ( min-width:768px ) {
+  .Search{
+    position: fixed;
+    top: 0;bottom: 0;right: 0;left: 0;
+    background-color: rgba(255,255,255,0.2);
+    z-index: 9999;
+    .popup{
+      border: 1px solid rgba(var(--black-color),0.8);
+      box-sizing: border-box;
+      padding: 28px 0px;//
+      background-color: var( --white-color);
+      width: 100%;
+      overflow: hidden;//
+      max-height: 782px;//
+      max-width: 900px;//
+      position: relative;//
+      left: 50%;top: 50%;//
+      transform: translate(-50%, -50%);//
+      &::before{
+        content: "";//
+        position: absolute;//
+        top: 0;//
+        left: 0;//
+        display: block;//
+        width: 100%;//
+        height: 11px;//
+        background-color: var(--main-color);//
+      }
+      .close{
+        position: absolute;right: 16px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: end;
+      }
+      h2{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-top: 17px;//
+      }
+      .search-container{
+        margin-top: 20px;//
+        h3{
+          margin-left: 40px;//
+          font-size: 1.5rem;
+          padding: 2px 22px;
+          background-color: var(--main-color);
+          display: inline-block;
+          color: var(--white-color);
+        }
+        .container{
+          overflow-y: scroll;
+          height: 100vh;
+          .content{}
+        }
+      }
+    }
+  }
+}

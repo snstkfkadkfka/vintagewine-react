@@ -1,0 +1,45 @@
+.AromaIcons,.FoodIcons{
+  text-align: center;
+  article{
+    p{
+      background-color: rgba(var(--sub-color-rgb), 0.1);
+      border: 1px solid rgba(var(--sub-color-rgb), 0.3);
+      width: 50px;height:50px;
+      border-radius: 50%;
+      font-size: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(var(--sub-color-rgb),0.8);
+      font-weight: 500;
+      margin: 0 auto 6px;
+    }
+    span{
+      font-size: 1.2em;
+      line-height: 1.8rem;
+    }
+  }
+}
+@media (min-width:768px ) and (max-width:1199px ) {
+  .AromaIcons,.FoodIcons{
+    article{
+      span{
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+@media (min-width:1200px ) {
+  .AromaIcons,.FoodIcons{
+    text-align: center;
+    article{
+      p{
+        width: 70px;height:70px;
+        font-size: 5rem;
+      }
+      span{
+        font-size: 1.4em;
+      }
+    }
+  }
+}

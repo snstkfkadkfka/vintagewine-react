@@ -1,0 +1,193 @@
+.WineInformation{
+  width: 100%;
+  padding: 15px 0 50px;
+  .wine-image{
+    box-sizing: border-box;
+    height: 420px;
+    margin: 0px 22px 30px;
+    border: 1px solid rgba(var(--main-color-rgb),.4);
+    img{
+      width: 100%;height: 100%;
+      object-fit: contain;
+    }
+  }
+  .wine-text{
+    padding: 0 28px;
+    span.name-en{
+      font-size:1.5rem ;
+      font-family: var(--jomoihari-font);
+      opacity: 0.2;
+    }
+    h2{
+      font-size: 2.3rem;
+      font-weight: 700;
+      padding: 10px 0 10px;
+    }
+    span.country{
+      font-size: 1.5rem;
+      opacity: 0.5;
+    }
+    &>p{
+      font-size: 2.3rem;
+      font-family: var(--jomoihari-font);
+      padding-top: 20px;
+      opacity: 0.8;
+      span{font-family: var(--NotoSansKR-font);padding-left: 2px;}
+    }
+    .wine-icon-text{
+      padding-top: 28px;
+      .wine-icons{
+        article{
+          h4{
+            font-size: 1.4rem; 
+            font-weight: 700;
+            display: inline-block;
+            padding: 4px 6px;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(var(--black-color),0.3);
+          }
+          .aroma-icon,.food-icon{
+            display: flex;
+            align-items: flex-start;
+            column-gap: 14px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .button{
+        padding-top: 37px;
+        button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          font-weight: 600;
+          background-color: var(--sub-color);
+          color: var(--white-color);
+          outline: none;
+          border: none;
+          padding: 12px 0px;
+          width: 100%;
+          border-radius:2px;
+          transition: 0.2s;
+          &:hover{
+            background-color: rgba(var( --sub-color-rgb),0.8);
+          }
+          p{
+            padding-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px ) and (max-width: 1199px ){
+  .WineInformation{
+    padding: 27px 0 150px;
+    .wine-image{
+      height: 582px;
+      max-width: 418px;
+      margin: 0 auto;
+      img{
+        transform: scale(0.9);
+      }
+    }
+    .wine-text{
+      margin-top: 66px;
+      padding: 0 45px;
+      span.name-en{
+        font-size:2rem ;
+      }
+      h2{
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 10px 0 15px;
+      }
+      span.country{
+        font-size: 2rem;
+      }
+      &>p{
+        font-size: 2.7rem;
+      }
+      .wine-icon-text{
+        padding-top: 60px;
+        .wine-icons{
+          column-gap: 100px;
+          display: flex;
+          article{
+            h4{
+              font-size: 1.5rem; 
+            }
+            .aroma-icon,.food-icon{
+              column-gap: 20px;
+            }
+          }
+        }
+        &::after{
+          content: "";
+          display: block;
+          clear: both;
+        }
+        .button{
+          float: right;
+          button{
+            padding: 12px 80px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px ) {
+  .WineInformation{
+    align-items: center;
+    display: flex;
+    padding: 118px 0 193px;
+    .wine-image{
+      min-width: 418px;
+      height: 581px;
+      margin: 0px;
+      img{
+        transform: scale(0.9);
+      }
+    }
+    .wine-text{
+      width: 100%;//
+      padding:0 0 0 30px ;
+      span.name-en{
+        font-size:2.5rem ;
+      }
+      h2{
+        font-size: 3rem;
+        padding: 6px 0 20px;
+      }
+      span.country{
+        font-size: 2rem;
+      }
+      &>p{
+        font-size: 2.9rem;
+        padding-top: 28px;
+      }
+      .wine-icon-text{
+        padding-top: 42px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .wine-icons{
+          article{
+            .aroma-icon,.food-icon{
+              column-gap: 30px;
+            }
+          }
+        }
+        .button{
+          padding-top: 0px;
+          button{
+            padding: 12px 62px;
+          }
+        }
+      }
+    }
+  }
+}

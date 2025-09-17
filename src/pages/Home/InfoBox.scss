@@ -1,0 +1,15 @@
+.InfoBox{
+  padding: 10px 0 60px;
+  .container{display: block;}
+}
+@media (min-width:768px){
+  .InfoBox{
+    padding: 91px 0 150px;
+  }
+}
+@media (min-width:1200px){
+  .InfoBox{
+    padding: 119px 0 143px;
+    .container{display: flex;column-gap: 16px}
+  }
+}

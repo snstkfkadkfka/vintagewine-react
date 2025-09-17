@@ -1,0 +1,89 @@
+.Dictionary{
+  font-size: 1.7rem;
+  article{
+    margin-bottom: 50px;
+    &:not(:last-child)::after{
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(var(--black-color),0.3);
+      padding-bottom: 10px;
+    }
+    h3{
+      color: var(--main-color);
+      position: relative;
+      font-weight: 500;
+      padding: 4px 10px;
+      border: 1px solid rgba(var(--main-color-rgb));
+      display: inline-block;
+      text-align: center;
+    }
+    p{
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      margin-top: 20px;
+    }
+    span{
+      font-size: 1.4rem;
+      line-height: 18px;
+    }
+  }
+  .producer{
+    a{
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: underline;
+      display: block;
+      margin-top: 10px;
+      opacity: 0.6;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (min-width: 768px ) and (max-width: 1199px){
+  .Dictionary{
+    article{
+      &>div{
+        margin-top: 16px;
+      }
+      p{
+        min-width: 150px;
+        line-height: 1.2;
+        margin-top: 0px;
+      }
+      span{
+        line-height: 20px;
+      }
+    }
+    .producer{
+      .production-text{
+        a{
+          cursor: pointer;
+          transition: 0.3s;
+          text-decoration: underline;
+          display: block;
+          margin-top: 10px;
+          opacity: 0.6;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px ){
+  .Dictionary{
+    article{
+      &:not(:last-child)::after{
+        content: "";
+        display: block;
+        width: 105%;
+        margin-left: -30px;
+        margin-right: -20px;
+        padding-top: 20px;
+      }
+    }
+  }
+}

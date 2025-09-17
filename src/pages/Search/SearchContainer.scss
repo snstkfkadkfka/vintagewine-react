@@ -1,0 +1,58 @@
+.SearchContainer{
+  padding: 17px 10px;
+  border-top:1px solid rgba(var( --black-color),0.5);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(223, 223, 223, 0.3);
+  }
+  .image{
+    border: 1px solid rgba(var(--font-color-rgb),0.5);
+    min-width: 96px; height: 118px;
+    border: 1px solid rgba(var(--main-color-rgb),0.4);
+    margin-right: 26px;
+    img{
+      width: 100%;height: 100%;object-fit: contain;
+      transform: scale(0.9);
+    }
+  }
+  .conText{
+    .enName{
+      font-family: var(--jomoihari-font);
+      font-size: 1.3rem;
+      opacity: 0.2;
+    }
+    h4{ 
+      margin-top: 4px;
+      font-size: 1.8rem;
+      word-break: keep-all;
+      line-height: 2.2rem;
+      span{font-size: 1.5rem;text-transform:capitalize;}
+    }
+    p.country{
+      font-size: 1.4rem;
+      opacity: 0.5;
+      margin-top: 4px;
+    }
+    .price{
+      margin-top: 10px;
+      font-size: 1.8rem;
+      font-family: var(--jomoihari-font);
+      opacity: 0.7;
+      span{
+        font-family: var(--NotoSansKR-font);
+        padding-left: 2px;
+      }
+    }
+  }
+}
+@media ( min-width: 768px) {
+  .SearchContainer{
+    margin: 0 40px;
+    padding: 17px 24px;
+    .image{
+      min-width: 154px;
+    }
+  }
+}

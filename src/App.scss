@@ -1,0 +1,38 @@
+.App{
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  .inner{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .btn1{
+    background-color: transparent;
+    outline: none;
+    border-radius: 50px;
+    padding: 14px 30px;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+      color: var(--white-color);
+      background-color: var(--main-color);
+    }
+  }
+  .btn2{
+    cursor: pointer;
+    background-color: var(--main-color);
+    outline: none;
+    border: 1px solid var(--main-color);
+    color: var(--white-color);
+    padding: 8px 20px;
+    transition: 0.3s;
+    &:hover{
+      background-color: rgba(#5A0E0E,0.1);
+      color: var(--main-color);
+      border-radius: 5px;
+    }
+  }
+}

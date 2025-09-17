@@ -1,0 +1,71 @@
+.MobileMenu{
+  background-color: var(--black-color);
+  button{
+    background-color: transparent;
+    color: var(--white-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    font-size:3.7rem ;
+    text-align: center;
+    &:hover{
+      
+      opacity: 0.7;
+      transform: scale(0.9);
+    }
+  }
+  &>button{
+    margin-top: 30px;
+    padding-left: 12px;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 393px;
+    height: 100%;
+    background: rgba(var(--black-color),0.9);
+    z-index: 99;
+    transition: transform 0.5s;
+    &.open{transform: translateX(0);}
+    &.clased{transform: translateX(-393px);}
+    button{
+      float: right;
+      padding-right: 20px;
+      text-align: center;
+    }
+    &::after,&::before{
+      display: none;
+    }
+    ul{
+      padding-top: 100px;
+      display: block;
+      font-size: 2.4rem;
+      li{
+        font-weight: 400;
+        border-left: 3px solid var(--white-color);
+        line-height: 7rem;
+        padding-left: 15px;
+        margin-left: 28px;
+        &:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+    .imgLogo{
+      background: url(../assets/logoicon.svg) no-repeat center/contain;
+      width:100px;
+      height: 80px;
+      cursor: pointer;
+      padding-right: 20px;
+      position: absolute;right: 0;bottom: 50px;
+      opacity: 0.4;
+      transition: opacity 0.3s;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+}
